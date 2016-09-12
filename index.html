@@ -10,8 +10,9 @@ Date: Sept, 2016 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Viewer | Random Wiki Article</title>
-    <link href="maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link href="getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" />
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
   </head>
 
@@ -23,11 +24,17 @@ Date: Sept, 2016 -->
     </div>
 
     <div class="container-fluid">
-      <div class="search">
-        <p>Search goes here</p>
-      </div>
+      <form>
+        <div class="input-group">
+          <label class="sr-only" for="search-input">Search field</label>
+          <div class="input-group">
+            <input type="text" class="form-control" name="search" id="search-input" placeholder="Search..." />
+          </div>
+        </div>
+        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i>Search</button>
+      </form>
 
-      <div class="result-field">
+      <div class="result-field"> <!-- Where the articles will be listed -->
         <ul>
           <li><a href="#" title="article 1" target="_blank">Article 1</a></li>
           <li><a href="#" title="article 2" target="_blank">Article 2</a></li>
