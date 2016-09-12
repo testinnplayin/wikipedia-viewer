@@ -12,6 +12,7 @@ Date: Sept, 2016 -->
     <title>Viewer | Random Wiki Article</title>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
   </head>
@@ -19,11 +20,11 @@ Date: Sept, 2016 -->
   <body>
     <div class="container-fluid header">
       <header>
-        <h1>Wiki Viewer</h1>
+        <h1>Wikipedia Viewer</h1>
       </header>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid main-content">
       <form>
         <div class="form-group">
           <label class="sr-only" for="search-input">Search field</label>
@@ -35,23 +36,23 @@ Date: Sept, 2016 -->
         <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
       </form>
 
-      <div class="result-field"> <!-- Where the articles will be listed -->
-        <ul>
-          <li><a href="#" title="article 1" target="_blank">Article 1</a></li>
-          <li><a href="#" title="article 2" target="_blank">Article 2</a></li>
-        </ul>
+      <div class="result-field list-group"> <!-- Where the articles will be listed -->
+        <a href="#" class="list-group-item" title="article 1" target="_blank">Article 1</a>
+        <a href="#" class="list-group-item" title="article 2" target="_blank">Article 2</a>
       </div>
 
     </div>
 
-    <div class="container-fluid">
-      <footer>
+
+    <footer>
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-6">Wood, R.</div>
-          <div class="col-xs-6">Powered by: <a href="#" target="_blank">Wikipedia</a></div>
+          <div class="col-xs-2 left"><p>Wood, R.</p></div>
+          <div class="col-xs-2 right"><p>Powered by: <a href="#" target="_blank">Wikipedia</a></p></div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
