@@ -69,9 +69,13 @@ form {
   background-color: #aaa;
 }
 
+#search-input,
 .btn {
-  padding: 10px 15px;
-  float: right;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 5px 15px;
 }
 
 .btn:hover {
@@ -90,6 +94,10 @@ form {
 
 .list-group-item:hover {
   border: 2px solid blue;
+}
+
+#luck {
+  background-color: lightblue;
 }
 
 
