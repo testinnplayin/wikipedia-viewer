@@ -49,6 +49,25 @@ form {
   margin: 10px auto;
 }
 
+#search-input {
+  width: 245px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  background-color: transparent;
+}
+
+#search-input:hover {
+  border: 1px solid blue;
+}
+
+#search-input:focus {
+  width: 50%;
+}
+
+.input-group {
+  margin-left: 700px;
+  padding: 5px;
+}
 
 /* FOOTER STYLES */
 
